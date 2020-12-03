@@ -1,0 +1,80 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
+  line-height: 1.3;
+  color: #545454;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  min-height: 925px;
+  background-image: url(../images/intro_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 58px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1;
+}
+
+.menu__item {
+  display: inline-block;
+  color: #fff794;
+}
+
+.menu__item + .menu__item {
+  margin-left: 14px;
+}
+
+.menu__link {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.9;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+/*# sourceMappingURL=style.css.map */
