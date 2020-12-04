@@ -119,6 +119,30 @@
   background-color: $green;
 }
 
+.info {
+  background-color: #fafafa;
+}
 
+.info__inner {
+  padding: 89px 150px 89px 169px;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.info__img {
+  margin-right: 120px;
+}
+
+.info__title {
+  text-align: center;
+  margin: -10px 91px 40px 28px;
+  letter-spacing: 2.3px; 
+}
+
+.info__text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.3;  
+}
 
 
