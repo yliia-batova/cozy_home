@@ -9,8 +9,6 @@
   background-size: cover;
 }
 
-
-
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -39,7 +37,7 @@
   line-height: 1.9;
   text-decoration: none;
   color: $white;
-  transition: color 0.5s;    
+  transition: color 0.5s;
 }
 
 .menu__link--active,
@@ -55,19 +53,19 @@
   display: block;
   content: "";
   width: 0%;
-  height: 3px;   
-  background-color: $beige; 
+  height: 3px;
+  background-color: $beige;
   transition: width 0.3s ease-in-out;
-  transform: translateX(-50%);  
+  transform: translateX(-50%);
 }
 
 .menu__link--active::after,
 .menu__link:hover:after,
 .menu__link:focus:after {
-  width: 100%;  
+  width: 100%;
 }
 
-.header__content { 
+.header__content {
   max-width: 410px;
   min-height: 310px;
   margin-top: 230px;
@@ -75,11 +73,11 @@
 }
 
 .header__title {
-  margin-bottom: 26px;  
+  margin-bottom: 26px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 44px;
   line-height: 1.3;
-  letter-spacing: 2.9px;  
+  letter-spacing: 2.9px;
   color: $white;
 }
 
@@ -88,35 +86,55 @@
   padding-right: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  line-height: 1.6;  
+  line-height: 1.6;
   color: $gray;
 }
 
 .btn {
   border-radius: 27px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
   cursor: pointer;
   &--yellow {
-    background-color: $yellow;  
-    transition: background-color .5s;   
+    background-color: $yellow;
+    transition: background-color 0.5s;
   }
-  &--lg {
-   padding-right: 38px;
-   padding-left: 34px;
+  &--white {
+    background-color: $white;
+    border: 2px solid $beige;
+    transition: background-color 0.5s;
   }
-
+  &--beige {
+    background-color: $beige;    
+  }
+  &--big {
+    padding-right: 22px;
+    padding-left: 29px;
+  }
+  &--m {
+    padding-right: 38px;
+    padding-left: 34px;
+  }
+  &--sm {
+    padding-right: 52px;
+    padding-left: 42px;
+  }  
 }
 
 .header__btn {
   font-size: 17px;
   line-height: 3;
   letter-spacing: 1px;
-  color: $dark-brown;   
+  color: $dark-brown;
 }
 
 .btn--yellow:hover,
 .btn--yellow:focus {
   background-color: $green;
+}
+.btn--white:hover,
+.btn--white:focus {
+  background-color: $beige;
 }
 
 .info {
@@ -124,9 +142,9 @@
 }
 
 .info__inner {
-  padding: 89px 150px 89px 169px;
+  padding: 89px 150px 77px 169px;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .info__img {
@@ -134,15 +152,104 @@
 }
 
 .info__title {
+  margin: -10px 91px 40px 10px;
   text-align: center;
-  margin: -10px 91px 40px 28px;
-  letter-spacing: 2.3px; 
+  letter-spacing: 2.3px;
 }
 
 .info__text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  line-height: 1.3;  
+  line-height: 1.35;
 }
 
+.slider {
+  background-color: #f6f6f6;
+}
 
+.slider__inner {
+  padding: 70px 0;
+}
+
+.slider__title {
+  margin: 0 370px 64px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.slider__items {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 67px;
+}
+
+.slider__item {  
+  max-width: 270px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.slider__item:hover {
+  box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
+}
+
+.slider__item-title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 2.3; 
+  letter-spacing: 1.5px;
+}
+
+.slider__item-btn {
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 2.9;
+  letter-spacing: 0.9px;
+  color: $dark-brown;
+}
+
+.slick-arrow {
+  width: 50px;
+  height: 50px;
+  padding-right: 15px;
+  padding-bottom: 6px;
+  padding-left: 17px;
+  font-size: 0;
+  background-color: transparent;
+  border: 2px solid $beige;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-prew {
+  margin-right: 81px;
+}
+
+.slick-next {
+  margin-left: 30px;
+}
+
+.slick-next:focus,
+.slick-prew:focus {
+  outline-width: 0;
+  background-color: $beige;
+}
+
+.slider__link {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.slider__link-btn {
+  font-size: 17px;
+  line-height: 3;
+  letter-spacing: 1px;
+  color: $dark-brown;
+  transition: font-size 0.5s;  
+}
+
+.slider__link-btn:hover {
+  font-size: 20px;
+}
