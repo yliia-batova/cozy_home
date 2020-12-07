@@ -2,7 +2,7 @@ html {
     box-sizing: border-box;
 }
 *,
-*::before, 
+*::before,
 *::after {
     box-sizing: inherit;
 }
@@ -19,7 +19,7 @@ li {
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 35px;
     line-height: 1.3;
     color: $brown;
@@ -29,4 +29,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.title {       
+    text-align: center;
+    letter-spacing: 2px;
 }

@@ -137,7 +137,8 @@
   background-color: $beige;
 }
 
-.info {
+.info,
+.help {
   background-color: #fafafa;
 }
 
@@ -172,9 +173,7 @@
 }
 
 .slider__title {
-  margin: 0 370px 64px;
-  text-align: center;
-  letter-spacing: 2px;
+  margin: 0 370px 64px;  
 }
 
 .slider__items {  
@@ -252,4 +251,36 @@
 
 .slider__link-btn:hover {
   font-size: 20px;
+}
+
+.help__inner {
+padding: 70px 55px 75px 100px;
+}
+
+.help__title {
+  margin: 0 270px 64px;  
+}
+
+.help__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.help__item {  
+  text-align: center;
+  &+.help__item {
+    margin-left: 75px;
+  }
+}
+
+.help__img {
+  margin-bottom: 25px;
+}
+
+.help__text {
+  margin-bottom: 80px;
+  font-size: 20px;
+  line-height: 1.2;
 }
