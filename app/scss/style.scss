@@ -291,7 +291,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 87px 150px 85px 19px;  
+  padding: 87px 150px 87px 19px;  
 }
 
 .donation__img {
@@ -334,4 +334,72 @@
   background-image: url(../images/credit-card.png);
   background-repeat: no-repeat;
   background-position: 24px, center;
+}
+
+.footer {
+  min-height: 363px;
+  background-image: url(../images/footer-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 275px 20px 0;
+}
+
+.footer__contact {
+  max-width: 305px;
+  margin-right: 140px;  
+}
+
+.footer__title {
+  margin: 45px 0 22px 3px ;  
+  letter-spacing: 1.5px;
+  color: $white;  
+}
+
+.footer__link {
+  margin-bottom: 15px;
+  padding-left: 65px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 2.3;
+  letter-spacing: 1.2px;  
+  color: $beige;
+  text-decoration: none;  
+} 
+
+.footer__link::before {
+  content: "";  
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+}
+
+.footer__link--email {
+  background-image: url(../images/envelope.png);
+  background-repeat: no-repeat;
+  background-position: 0, center;
+}
+
+.footer__link--tel {
+  background-image: url(../images/telephone.png);
+  background-repeat: no-repeat;
+  background-position: 0, center;
+}
+
+.footer__link--address {
+  background-image: url(../images/pin.png);
+  background-repeat: no-repeat;
+  background-position: 3px 8px;
+}
+
+.footer__address-link {
+  padding: 4px 60px 0 50px;
+  line-height: 1.2;  
 }
