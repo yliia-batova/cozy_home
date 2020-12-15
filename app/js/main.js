@@ -1,5 +1,5 @@
 $(function () {
-  $(".slider__items").slick({
+  $(".slider__slick").slick({
     slidesToShow: 3,
     adaptiveHeight: true,
     arrows: true,
