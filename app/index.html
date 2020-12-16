@@ -28,22 +28,22 @@
                         </button> -->
                             <ul class="menu">
                                 <li class="menu__item">
-                                    <a class="menu__link menu__link--yellow menu__link--active" href="#">
+                                    <a class="menu__link menu__link--yellow menu__link--active" href="#info">
                                         О приюте
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a class="menu__link menu__link--white" href="#">
+                                    <a class="menu__link menu__link--white" href="#slider">
                                         Наши питомцы
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a class="menu__link menu__link--white" href="#">
+                                    <a class="menu__link menu__link--white" href="#help">
                                         Чтобы помочь приюту
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a class="menu__link menu__link--white" href="#">
+                                    <a class="menu__link menu__link--white" href="#footer">
                                         Контакты
                                     </a>
                                 </li>
@@ -59,7 +59,7 @@
                             Любовь, дружбу и преданность гарантируем!
                         </p>
                         <div class="header__link">
-                            <a class="btn btn--yellow btn--m header__btn">
+                            <a href="new-items.html"  target="_blank" class="btn btn--yellow btn--m header__btn">
                                 Завести друзей
                             </a>
                         </div>
@@ -67,15 +67,14 @@
                 </div>
             </header>
             <main>
-                <section class="info">
+                <section class="info" id="info">
                     <div class="container">
                         <div class="info__inner">
                             <div class="info__img">
                                 <img src="images/pets.png" alt="Pets">
                             </div>
-
                             <div class="info__desc">
-                                <p class="info__title">
+                                <p  class="info__title">
                                     О приюте
                                     «Уютный дом»
                                 </p>
@@ -90,7 +89,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="slider">
+                <section class="slider" id="slider">
                     <div class="container">
                         <div class="slider__inner">
                             <p class="title slider__title">
@@ -150,28 +149,44 @@
                                     <p class="slider__item-title">
                                         Дженифер
                                     </p>
-                                    <a data-fancybox data-src="#modal" href="javascript:;"
+                                    <a data-fancybox data-src="#modal-2" href="javascript:;"
                                         class="btn btn--white btn--sm slider__item-btn">
                                         Детальнее
                                     </a>
-                                    <div style="display: none;" id="modal-1" class="pet">
-                                        <img class="pet__img" src="images/cat-kate.png" alt="Cat">
-                                        <div class="pet__info">
-                                            <p class="pet__name">
-
-                                            </p>
-                                            <span class="pet__breed">
-
-                                            </span>
-                                            <p class="pet__desc">
-
-                                            </p>
-                                            <ul class="pet__items">
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                            </ul>
+                                    <div style="display: none;" id="modal-2" class="modal">
+                                        <div class="pet">
+                                            <img class="pet__img" src="images/dog-djenifer.png" alt="Dog">
+                                            <div class="pet__info">
+                                                <p class="pet__name">
+                                                    Дженифер
+                                                </p>
+                                                <span class="pet__breed">
+                                                    Лабрадор ретривер + Дворняга
+                                                </span>
+                                                <p class="pet__desc">
+                                                    Красивая собака выростает средних размеров с шерстью, которая не
+                                                    промокает. Она очень нежная и мягкая, словно игрушечная.
+                                                    При правильном воспитании этот щенок может быть таким бережным и
+                                                    нежным, что способен в пасти носить яйца и не раздавить их.
+                                                    Девочка любопытна до неприличия. Ей нужно знать все и быть везде.
+                                                    Идеально подойдет для семьи и способна стать
+                                                    не только другом, но и незаменимым помощником.
+                                                </p>
+                                                <ul class="pet__items">
+                                                    <li class="pet__item">
+                                                        Возраст: <span class="pet__item-style">7 мес</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Прививки: <span class="pet__item-style">все</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Болезни: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Паразиты: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -180,28 +195,45 @@
                                     <p class="slider__item-title">
                                         Лакки
                                     </p>
-                                    <a data-fancybox data-src="#modal" href="javascript:;"
+                                    <a data-fancybox data-src="#modal-3" href="javascript:;"
                                         class="btn btn--white btn--sm slider__item-btn">
                                         Детальнее
                                     </a>
-                                    <div style="display: none;" id="modal-1" class="pet">
-                                        <img class="pet__img" src="images/cat-kate.png" alt="Cat">
-                                        <div class="pet__info">
-                                            <p class="pet__name">
-
-                                            </p>
-                                            <span class="pet__breed">
-
-                                            </span>
-                                            <p class="pet__desc">
-
-                                            </p>
-                                            <ul class="pet__items">
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                            </ul>
+                                    <div style="display: none;" id="modal-3" class="modal">
+                                        <div class="pet">
+                                            <img class="pet__img" src="images/dog-lakki.png" alt="Dog">
+                                            <div class="pet__info">
+                                                <p class="pet__name">
+                                                    Лакки
+                                                </p>
+                                                <span class="pet__breed">
+                                                    Ирландский сеттер + Дворняга
+                                                </span>
+                                                <p class="pet__desc">
+                                                    Приветливая, темпераментная и энергичная собака.
+                                                    Она быстрый, выносливая, делает стойку в типичной позе — полуприсев.
+                                                    Она не годится для людей, которые любят покой и личный комфорт.
+                                                    Ей нужны долгие прогулки с возможностью свободно бегать.
+                                                    Она любит играть, понятлива.
+                                                    Как все собаки с развитым охотничьим инстинктом, она имеет базовые
+                                                    навыки послушания.
+                                                    Дома это приятная и спокойная собака.
+                                                </p>
+                                                <ul class="pet__items">
+                                                    <li class="pet__item">
+                                                        Возраст: <span class="pet__item-style">3 года</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Прививки: <span class="pet__item-style">все</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Болезни: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Паразиты: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -210,28 +242,49 @@
                                     <p class="slider__item-title">
                                         Лариса
                                     </p>
-                                    <a data-fancybox data-src="#modal" href="javascript:;"
+                                    <a data-fancybox data-src="#modal-4" href="javascript:;"
                                         class="btn btn--white btn--sm slider__item-btn">
                                         Детальнее
                                     </a>
-                                    <div style="display: none;" id="modal-1" class="pet">
-                                        <img class="pet__img" src="images/cat-kate.png" alt="Cat">
-                                        <div class="pet__info">
-                                            <p class="pet__name">
-
-                                            </p>
-                                            <span class="pet__breed">
-
-                                            </span>
-                                            <p class="pet__desc">
-
-                                            </p>
-                                            <ul class="pet__items">
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                            </ul>
+                                    <div style="display: none;" id="modal-4" class="modal">
+                                        <div class="pet">
+                                            <img class="pet__img" src="images/cat-lara.png" alt="Cat">
+                                            <div class="pet__info">
+                                                <p class="pet__name">
+                                                    Лариса
+                                                </p>
+                                                <span class="pet__breed">
+                                                    Мейн-кун
+                                                </span>
+                                                <p class="pet__desc">
+                                                    У кошки роскошная шерсть и дружелюбный нрав.
+                                                    Она представитель самой крупной породы домашних кошек. Оптимальный
+                                                    вес взрослых котов 8-10 кг.
+                                                    Хотя на вид Лариса больше напоминает аристократического и злого
+                                                    хищника, на самом деле оказывается
+                                                    добродушным и мягким созданием.
+                                                    Такие кошки очень интеллигентны, поэтому владельцы не столкнутся с
+                                                    такой проблемой как бдительная слежка за питомцем.
+                                                    Эти кошки очень верны хозяевам, с чужими людьми ведут себя спокойно,
+                                                    без фамильярности или недовольства.
+                                                    Но при этом от вторжения других животных Мейн-кун готов защищать
+                                                    свою территорию.
+                                                </p>
+                                                <ul class="pet__items">
+                                                    <li class="pet__item">
+                                                        Возраст: <span class="pet__item-style">2 мес</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Прививки: <span class="pet__item-style">все</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Болезни: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Паразиты: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -240,28 +293,43 @@
                                     <p class="slider__item-title">
                                         Ириска
                                     </p>
-                                    <a data-fancybox data-src="#modal" href="javascript:;"
+                                    <a data-fancybox data-src="#modal-5" href="javascript:;"
                                         class="btn btn--white btn--sm slider__item-btn">
                                         Детальнее
                                     </a>
-                                    <div style="display: none;" id="modal-1" class="pet">
-                                        <img class="pet__img" src="images/cat-kate.png" alt="Cat">
-                                        <div class="pet__info">
-                                            <p class="pet__name">
-
-                                            </p>
-                                            <span class="pet__breed">
-
-                                            </span>
-                                            <p class="pet__desc">
-
-                                            </p>
-                                            <ul class="pet__items">
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                            </ul>
+                                    <div style="display: none;" id="modal-5" class="modal">
+                                        <div class="pet">
+                                            <img class="pet__img" src="images/dog-iriska.png" alt="Dog">
+                                            <div class="pet__info">
+                                                <p class="pet__name">
+                                                    Ириска
+                                                </p>
+                                                <span class="pet__breed">
+                                                    Лабрадор ретривер
+                                                </span>
+                                                <p class="pet__desc">
+                                                    Девочка с хорошим характером, очень подвижная, гиперактивная.
+                                                    Превосходное чутьё, мягкая хватка, страсть к воде.
+                                                    Легко адаптирующийся, преданный компаньон. Смышлёная, проницательная
+                                                    и послушная,
+                                                    ласковая, настоящий друг. Добрая по натуре, без следа агрессии или
+                                                    чрезмерной робости.
+                                                </p>
+                                                <ul class="pet__items">
+                                                    <li class="pet__item">
+                                                        Возраст: <span class="pet__item-style">8 мес</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Прививки: <span class="pet__item-style">все</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Болезни: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Паразиты: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -270,28 +338,44 @@
                                     <p class="slider__item-title">
                                         Джесика
                                     </p>
-                                    <a data-fancybox data-src="#modal" href="javascript:;"
+                                    <a data-fancybox data-src="#modal-6" href="javascript:;"
                                         class="btn btn--white btn--sm slider__item-btn">
                                         Детальнее
                                     </a>
-                                    <div style="display: none;" id="modal-1" class="pet">
-                                        <img class="pet__img" src="images/cat-kate.png" alt="Cat">
-                                        <div class="pet__info">
-                                            <p class="pet__name">
-
-                                            </p>
-                                            <span class="pet__breed">
-
-                                            </span>
-                                            <p class="pet__desc">
-
-                                            </p>
-                                            <ul class="pet__items">
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                            </ul>
+                                    <div style="display: none;" id="modal-6" class="modal">
+                                        <div class="pet">
+                                            <img class="pet__img" src="images/dog-djeci.png" alt="Dog">
+                                            <div class="pet__info">
+                                                <p class="pet__name">
+                                                    Джесика
+                                                </p>
+                                                <span class="pet__breed">
+                                                    Ротвейлер + Дворняга
+                                                </span>
+                                                <p class="pet__desc">
+                                                    Девочка обладают спокойным и сильным характером, а также стабильной
+                                                    психикой.
+                                                    Собаки демонстрирует доминативное поведение по отношению как к своим
+                                                    сородичам, так и к людям.
+                                                    К посторонним людям она недоверчива, не склонна проявлять интерес к
+                                                    чужим людям и идти с ними на контакт.
+                                                    Джесика ласкова и идет на контакт к людям, особенно детям. Знает
+                                                    комманды.
+                                                <ul class="pet__items">
+                                                    <li class="pet__item">
+                                                        Возраст: <span class="pet__item-style">2 года</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Прививки: <span class="pet__item-style">все</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Болезни: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Паразиты: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -300,28 +384,41 @@
                                     <p class="slider__item-title">
                                         Барс
                                     </p>
-                                    <a data-fancybox data-src="#modal" href="javascript:;"
+                                    <a data-fancybox data-src="#modal-7" href="javascript:;"
                                         class="btn btn--white btn--sm slider__item-btn">
                                         Детальнее
                                     </a>
-                                    <div style="display: none;" id="modal-1" class="pet">
-                                        <img class="pet__img" src="images/cat-kate.png" alt="Cat">
-                                        <div class="pet__info">
-                                            <p class="pet__name">
-
-                                            </p>
-                                            <span class="pet__breed">
-
-                                            </span>
-                                            <p class="pet__desc">
-
-                                            </p>
-                                            <ul class="pet__items">
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                            </ul>
+                                    <div style="display: none;" id="modal-7" class="modal">
+                                        <div class="pet">
+                                            <img class="pet__img" src="images/cat-bars.png" alt="Cat">
+                                            <div class="pet__info">
+                                                <p class="pet__name">
+                                                    Барс
+                                                </p>
+                                                <span class="pet__breed">
+                                                    Американский короткошёрстный
+                                                </span>
+                                                <p class="pet__desc">
+                                                    Кот не требует особого ухода, здоров, ласковый и общительный с
+                                                    незнакомцами.
+                                                    Кот имеет крепкое, мощное и мускулистое тело с хорошо развитыми
+                                                    плечами, грудной клеткой и задними конечностями.
+                                                </p>
+                                                <ul class="pet__items">
+                                                    <li class="pet__item">
+                                                        Возраст: <span class="pet__item-style">2 года</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Прививки: <span class="pet__item-style">все</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Болезни: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Паразиты: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -330,28 +427,39 @@
                                     <p class="slider__item-title">
                                         Лапа
                                     </p>
-                                    <a data-fancybox data-src="#modal" href="javascript:;"
+                                    <a data-fancybox data-src="#modal-8" href="javascript:;"
                                         class="btn btn--white btn--sm slider__item-btn">
                                         Детальнее
                                     </a>
-                                    <div style="display: none;" id="modal-1" class="pet">
-                                        <img class="pet__img" src="images/cat-kate.png" alt="Cat">
-                                        <div class="pet__info">
-                                            <p class="pet__name">
-
-                                            </p>
-                                            <span class="pet__breed">
-
-                                            </span>
-                                            <p class="pet__desc">
-
-                                            </p>
-                                            <ul class="pet__items">
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                            </ul>
+                                    <div style="display: none;" id="modal-8" class="modal">
+                                        <div class="pet">
+                                            <img class="pet__img" src="images/dog-lapa.png" alt="Dog">
+                                            <div class="pet__info">
+                                                <p class="pet__name">
+                                                    Лапа
+                                                </p>
+                                                <span class="pet__breed">
+                                                    Дворняга
+                                                </span>
+                                                <p class="pet__desc">
+                                                    Длинношёрстная, сильная и подвижная собака, выше среднего размера, с крепкими лапами, гармоничная и хорошо сбалансированная. 
+                                                    Уверенная в себе, внимательная, бдительная, добродушная, преданная своему хозяину, не агрессивная, послушная.
+                                                </p>
+                                                <ul class="pet__items">
+                                                    <li class="pet__item">
+                                                        Возраст: <span class="pet__item-style">1,8 год</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Прививки: <span class="pet__item-style">все</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Болезни: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Паразиты: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -360,41 +468,52 @@
                                     <p class="slider__item-title">
                                         Топик
                                     </p>
-                                    <a data-fancybox data-src="#modal" href="javascript:;"
+                                    <a data-fancybox data-src="#modal-9" href="javascript:;"
                                         class="btn btn--white btn--sm slider__item-btn">
                                         Детальнее
                                     </a>
-                                    <div style="display: none;" id="modal-1" class="pet">
-                                        <img class="pet__img" src="images/cat-kate.png" alt="Cat">
-                                        <div class="pet__info">
-                                            <p class="pet__name">
-
-                                            </p>
-                                            <span class="pet__breed">
-
-                                            </span>
-                                            <p class="pet__desc">
-
-                                            </p>
-                                            <ul class="pet__items">
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                                <li class="pet__item"></li>
-                                            </ul>
+                                    <div style="display: none;" id="modal-9" class="modal">
+                                        <div class="pet">
+                                            <img class="pet__img" src="images/dog-topic.png" alt="Dog">
+                                            <div class="pet__info">
+                                                <p class="pet__name">
+                                                    Топик
+                                                </p>
+                                                <span class="pet__breed">
+                                                    Дворняга
+                                                </span>
+                                                <p class="pet__desc">
+                                                    Дружелюбный и беззаботный песик. Сстремится ладить с другими собаками и домашними животными. Хорошо ладит с детьми. 
+                                                    Умная и упрямая сабака. Может часто лаять, кроме того, у него крепкие лапы и когти, любит копать.
+                                                </p>
+                                                <ul class="pet__items">
+                                                    <li class="pet__item">
+                                                        Возраст: <span class="pet__item-style">4 мес</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Прививки: <span class="pet__item-style">все</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Болезни: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                    <li class="pet__item">
+                                                        Паразиты: <span class="pet__item-style">нет</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="slider__link">
-                                <a href="#" class="btn btn--beige btn--big slider__link-btn">
+                                <a href="new-items.html"  target="_blank" class="btn btn--beige btn--big slider__link-btn">
                                     Познакомьтесь с остальными
                                 </a>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="help">
+                <section class="help" id="help">
                     <div class="container">
                         <div class="help__inner">
                             <p class="title help__title">
@@ -480,7 +599,7 @@
                 </section>
             </main>
         </div>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__contact">
