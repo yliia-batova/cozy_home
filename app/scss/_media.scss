@@ -1,0 +1,123 @@
+@media (max-width: 1199px) {
+    .footer__inner {
+        justify-content: space-around;
+        padding-right: 225px;
+        padding-left: 50px;
+    }
+
+    .footer__contact {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer__inner {
+        padding-right: 50px;
+    }
+
+    .footer__title {
+        font-size: 34px;
+    }
+
+    .footer__link {
+        font-size: 19px;
+    }
+
+    .footer__address-link {
+        width: 290px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer__inner {
+        display: block;
+    }
+
+    .footer__contact {
+        max-width: none;
+    }
+
+    .footer__title {
+        margin-top: 30px;
+    }
+
+    .footer__link {
+        margin-right: 30px;
+    }
+
+    .footer__address-link {
+        width: auto;
+        padding-right: 0;
+        line-height: 1.7;
+    }
+
+    .footer__link--address {
+        background-position: 0, center;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 667px) {
+    .footer__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .footer__contact {
+        margin: 0;
+        & + & {
+            margin-left: 40px;
+        }
+        
+    }
+    .footer__title {
+        margin-top: 10px;
+        font-size: 29px;
+    }
+
+    .footer__address-link {
+        line-height: 1.2;
+    }
+}
+
+
+@media (max-width: 567px) {
+    .footer__inner {
+        text-align: center;
+    }
+
+    .footer__contact {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .footer__contact {
+        margin: 0;
+    }
+    .footer__title {
+        margin-top: 0;
+        font-size: 25px;
+    }
+
+    .footer__link {
+        margin-right: 0;
+        padding-left: 50px;
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+
+    .footer__inner {
+        padding: 15px 25px;
+    }
+
+    .footer__address-link {
+        background-position: 10px, center;
+        width: 89%;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer__address-link {
+        width: 100%;
+    }
+}
