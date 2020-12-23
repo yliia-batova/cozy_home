@@ -1,4 +1,43 @@
 @media (max-width: 1199px) {
+    .info__inner {
+        padding: 89px 90px 77px 90px;
+    }
+
+    .info__title {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .slider__img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .slider__title {
+        margin: 0 100px 60px;
+    }
+
+    .help__items {
+        justify-content: space-around;
+    }
+
+    .help__title {
+        margin: 0 100px 66px;
+    }
+
+    .help__item {
+        & + .help__item {
+            margin-left: 30px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .donation__inner {
+        padding-right: 29px;
+    }
+
     .footer__inner {
         justify-content: space-around;
         padding-right: 225px;
@@ -11,13 +50,31 @@
 }
 
 @media (max-width: 991px) {
-    .footer__inner {
-        padding-right: 50px;
+    .header {
+        min-height: 100%;
     }
 
+    .header__content {
+        margin-top: 20%;
+    }
+
+    .help__title,
     .footer__title {
         font-size: 34px;
     }
+
+    .donation__inner {
+        display: block;
+        text-align: center;
+    }
+
+    .donation__card {
+        margin: 0 auto;
+    }
+
+    .footer__inner {
+        padding-right: 50px;
+    }   
 
     .footer__link {
         font-size: 19px;
@@ -28,11 +85,93 @@
     }
 }
 
+@media (max-width: 900px) {
+    .info__img {
+        display: none;
+    }
+
+    .slider__item {
+        max-width: none;
+    }
+
+    .pet {
+        padding: 40px;
+    }
+
+    .pet__img {
+        margin-right: 40px;
+    }
+}
+
 @media (max-width: 767px) {
+    .header__menu-btn,
     .footer__inner {
         display: block;
     }
+    .header__menu .menu {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: 120px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: $dark-brown;
+        border: 2px solid $beige;
+    }
 
+    .help__title {
+        margin: 0 0 30px;
+    }
+
+    .menu__link {
+        display: block;
+        padding: 13px;
+    }
+
+    .header__menu .menu__item {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 5px;
+    }
+
+    .header__content {
+        max-width: 400px;
+        margin-top: 150px;
+    }
+
+    .pet {
+        padding: 20px;
+    }
+
+    .pet__img {
+        display: none;
+    }
+
+    .help__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .help__item {
+        & + .help__item {
+            margin-left: 10px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .help__text {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .donation__inner {
+        padding: 15px;
+    }
+    
     .footer__contact {
         max-width: none;
     }
@@ -67,7 +206,6 @@
         & + & {
             margin-left: 40px;
         }
-        
     }
     .footer__title {
         margin-top: 10px;
@@ -79,8 +217,67 @@
     }
 }
 
+@media (max-width: 667px) {
+    .header__content {
+        max-width: 330px;
+        margin-top: 15%;
+    }
+
+    .info__inner {
+        padding: 50px;
+    }
+
+    .header__title,
+    .info__title,
+    .help__title,
+    .donation__title {
+        font-size: 29px;
+    }
+
+    .header__title {        
+        padding-right: 0;
+    }
+
+    .info__text {
+        font-size: 16px;
+    }
+
+    .header {
+        background-image: none;
+        background-color: $header-bg;
+    }
+
+    .header__content {
+        max-width: none;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .header__text {
+        margin-bottom: 20px;
+        padding-right: 0;
+    }
+
+    .menu__link {
+        padding: 8px;
+    }
+
+    .help__inner {
+        padding: 10px;
+    }
+
+    
+}
 
 @media (max-width: 567px) {
+    .header__link {
+        padding-bottom: 50px;
+    }
+
+    .slider {
+        display: none;
+    }
+
     .footer__inner {
         text-align: center;
     }
@@ -91,10 +288,35 @@
 }
 
 @media (max-width: 430px) {
+    .info__inner {
+        padding: 20px;
+    }
+
+    .info__title {
+        margin-bottom: 10px;
+    }
+
+    .help__item {
+        & + .help__item {
+            margin-left: 20px;
+        }
+    }
+
+    .donation__card {
+        padding-left: 0;
+        font-size: 16px;
+    }
+
+    .donation__card--icon {
+        background-image: none;
+        background-position: 10px, center;
+    }
+
     .footer__contact {
         margin: 0;
     }
-    .footer__title {
+    .footer__title,
+    .donation__title {
         margin-top: 0;
         font-size: 25px;
     }
@@ -111,8 +333,8 @@
     }
 
     .footer__address-link {
-        background-position: 10px, center;
         width: 89%;
+        background-position: 10px, center;
     }
 }
 
