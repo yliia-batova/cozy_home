@@ -21,9 +21,14 @@
 .header__menu-btn {
   display: none;
   width: 45px;
-  border: none;
-  background-color: $beige;
+  border: none;  
   padding-top: 4px;
+  &--beige {
+    background-color: $beige;
+  }
+  &--white {
+    background-color: $white;
+  }
 }
 
 .header__menu-line {
@@ -87,7 +92,7 @@
 .menu__link--active::after,
 .menu__link:hover:after,
 .menu__link:focus:after {
-  width: 100%;
+  width: 90%;
 }
 
 .header__content {
@@ -448,12 +453,17 @@
   background-image: none;  
 }
 
+.slider__items.pets__items {
+  justify-content: space-around;
+}
+
 .pets__items {
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
 .pets__item {
+  min-width: 270px;
   margin-bottom: 30px;
 }
 
