@@ -10,19 +10,19 @@ $(function () {
       {
         breakpoint: 1100,
         settings: {
-          slidesToShow: 2,          
+          slidesToShow: 2,
         }
       },
       {
-        breakpoint: 900,
+        breakpoint: 920,
         settings: {
-          slidesToShow: 1,          
+          slidesToShow: 1,
         }
       }
     ]
   });
 
-  $('.header__menu-btn').on('click', function(){
+  $('.header__menu-btn').on('click', function () {
     $('.header__menu .menu').slideToggle();
   });
 });
