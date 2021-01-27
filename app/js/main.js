@@ -26,3 +26,22 @@ $(function () {
     $('.header__menu .menu').slideToggle();
   });
 });
+
+const offset = 100;
+const scrollUp = document.querySelector(".scrollup");
+const getTop = () => window.pageXOffset || document.documentElement.scrollTop;
+
+window.addEventListener('scroll', () => {
+  if ( getTop() > offset) {
+    scrollUp.classList.add('scrollup__active')
+  } else {
+    scrollUp.classList.remove('scrollup__active')
+  }
+});
+
+scrollUp.addEventListener('click', () => {
+  window.scrollTo({
+    top:0,
+    behavior: 'smooth'
+  });
+});
