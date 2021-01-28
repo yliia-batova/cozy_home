@@ -1,4 +1,12 @@
 @media (max-width: 1199px) {
+    .header {
+        min-height: 100%;
+    }
+
+    .header__content {
+        margin-top: auto;
+    }
+
     .info__inner {
         padding: 89px 90px 77px 90px;
     }
@@ -47,17 +55,9 @@
     .footer__contact {
         margin-right: 50px;
     }
-}
+}    
 
 @media (max-width: 991px) {
-    .header {
-        min-height: 100%;
-    }
-
-    .header__content {
-        margin-top: 20%;
-    }
-
     .info__title,
     .help__title,
     .footer__title {
@@ -112,8 +112,7 @@
 @media (max-width: 830px) {
     .header__content {
         max-width: 400px;
-        min-height: auto;
-        margin-top: 56px;
+        min-height: auto;        
     }
     .header__title {
         line-height: 1.2;
@@ -176,6 +175,10 @@
     .header__menu .menu__new-item {
         background-color: $white;
         border: 2px solid $dark-brown;
+    }
+
+    .header__text {
+        padding-right: 150px;
     }
 
     .help__title {
