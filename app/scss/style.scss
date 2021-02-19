@@ -246,7 +246,7 @@
   color: $dark-brown;
   &:focus {
     outline: none;
-    outline-offset: none;
+    outline-offset: 0;
   }
 }
 
